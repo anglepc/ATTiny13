@@ -1,0 +1,32 @@
+gavrasm Gerd's AVR assembler version 3.4 (C)2014 by DG4FAC
+----------------------------------------------------------
+Source file: nokia_5110.asm
+Hex file:    nokia_5110.hex
+Eeprom file: nokia_5110.eep
+Compiled:    31.12.2015, 19:28:53
+Pass:        2
+Error ==> .SET USI_WM = 0<<USIWM1 | 1<<USIWM0 ; Three-wire mode
+[nokia_5110.asm,3] 007: Undefined constant, variable, label or device (USIWM1)!
+Error ==> .SET USI_WM = 0<<USIWM1 | 1<<USIWM0 ; Three-wire mode
+[nokia_5110.asm,3] 041: Failed resolving right side of equation in EQU/SET/DEF!
+Error ==> .SET USI_CS = 1<<USICS1 | 0<<USICS0 | 1<<USICLK ; External, positive-edge, USITC strobe
+[nokia_5110.asm,4] 007: Undefined constant, variable, label or device (USICS1)!
+Error ==> .SET USI_CS = 1<<USICS1 | 0<<USICS0 | 1<<USICLK ; External, positive-edge, USITC strobe
+[nokia_5110.asm,4] 041: Failed resolving right side of equation in EQU/SET/DEF!
+Error ==> .SET USI_TC = 1<<USITC ; Clock Strobe
+[nokia_5110.asm,5] 007: Undefined constant, variable, label or device (USITC)!
+Error ==> .SET USI_TC = 1<<USITC ; Clock Strobe
+[nokia_5110.asm,5] 041: Failed resolving right side of equation in EQU/SET/DEF!
+Error ==> 	out	USIDR, R16 ; USI Data Register - send R16
+[nokia_5110.asm,174] 007: Undefined constant, variable, label or device (USIDR)!
+Error ==> 	sbi	USISR, USIOIF ; Clear the Counter Overflow Interrupt Flag
+[nokia_5110.asm,175] 007: Undefined constant, variable, label or device (USISR)!
+Error ==> 	sbi	USISR, USIOIF ; Clear the Counter Overflow Interrupt Flag
+[nokia_5110.asm,175] 007: Undefined constant, variable, label or device (USIOIF)!
+Error ==> 	out	USICR, R17 ; USI Control Register
+[nokia_5110.asm,178] 007: Undefined constant, variable, label or device (USICR)!
+Error ==> 	in	R18, USISR
+[nokia_5110.asm,179] 007: Undefined constant, variable, label or device (USISR)!
+Error ==> 	sbrs	R18, USIOIF
+[nokia_5110.asm,180] 007: Undefined constant, variable, label or device (USIOIF)!
+Compilation aborted, 12 errors!
